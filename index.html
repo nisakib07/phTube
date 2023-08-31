@@ -12,6 +12,11 @@
       type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/83b4fe29a5.js"
+      crossorigin="anonymous"></script>
+
     <!-- Google Font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,12 +29,55 @@
       .inter-font {
         font-family: "Inter", sans-serif;
       }
+      .active {
+        background-color: #ff1f3d !important;
+        color: white !important;
+      }
     </style>
   </head>
-  <body class="inter-font">
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <body class="inter-font max-w-screen-xl mx-auto">
+    <header>
+      <div class="navbar bg-base-100 flex justify-between border-b-2 py-8">
+        <div>
+          <img src="images/Logo.png" alt="" />
+        </div>
+        <div>
+          <button onclick="sortHandler()" class="btn lg:ml-[-100px]">
+            Sort by view
+          </button>
+        </div>
+        <div>
+          <button class="btn bg-[#FF1F3D] text-white hover:bg-orange-500">
+            Blog
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Tabs -->
+      <section class="mt-8">
+        <div
+          id="tabs-container"
+          class="tabs bg-white flex justify-center gap-6"></div>
+      </section>
+
+      <!-- Cards -->
+      <section class="mt-9">
+        <div
+          id="cards-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+      </section>
+    </main>
+
+    <!-- No data found -->
+    <section id="no-data" class="hidden">
+      <div class="flex flex-col items-center justify-center mt-24">
+        <img class="w-[140px]" src="./images/Icon.png" alt="" />
+        <h3 class="text-2xl font-bold mt-7">
+          Oopss!! Sorry, There is no content here
+        </h3>
+      </div>
+    </section>
 
     <!-- JS -->
     <script src="js/script.js"></script>
