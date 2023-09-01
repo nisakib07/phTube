@@ -88,8 +88,8 @@ const displayCards = (cards) => {
 };
 
 const compareViews = (a, b) => {
-  const viewA = a.others.views.slice(0, 3);
-  const viewB = b.others.views.slice(0, 3);
+  const viewA = a.others.views.slice(0, -1);
+  const viewB = b.others.views.slice(0, -1);
   return viewA - viewB;
 };
 
