@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <!-- Tailwind and DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/83b4fe29a5.js"
+      crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet" />
+
+    <style>
+      .inter-font {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class=".inter-font max-w-screen-xl mx-auto">
+    <header>
+      <h1 class="text-4xl text-center font-semibold">Blog Questions</h1>
+    </header>
+    <main class="mt-6">
+      <div class="collapse collapse-arrow bg-base-200 my-4">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          Scope of var, let and const
+        </div>
+        <div class="collapse-content">
+          <p>
+            Var, let and const are three methods used in JavaScript to declare a
+            variable. Though the initial objective of these three is same, their
+            working procedure and scope are slight different. Here, we are going
+            to find out the differences regarding the scope of them.
+          </p>
+          <p class="my-3">
+            <span class="font-bold">Var : </span>Scope of var variable is
+            functional scope. The value of this variable can be updated and
+            re-declared. This type of declarations are hoisted to the top of
+            that variable or in a global scope which makes it possible to use
+            this variable before initialization though the value will be
+            undefined.
+          </p>
+          <p class="my-3">
+            <span class="font-bold">Let : </span> The scope of let variable is
+            block scope. This type of variables can be declared without
+            initialization. Though the value of this type variable can be
+            updated, it can not be re-declared. It is not hoisted like `var`, so
+            using the variable before initialization is impossible.
+          </p>
+          <p>
+            <span class="font-bold">Const : </span>Like the 'let' variable, this
+            too is a block scoped variable. But the difference is 'const'
+            variables can neither be updated or re-declared. It is not also
+            possible to declare this type of variable without initialization.
+            Hoisting to the global space does not happen in this case.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 my-4">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Use cases of null and undefined
+        </div>
+        <div class="collapse-content">
+          <p class="mb-4">
+            'null' and 'undefined' are two primitive type data value in
+            JavaScript. While 'undefined' refers the absence of any value,
+            'null' defines the intentional absence of any value. The use cases
+            of these two are described below:
+          </p>
+          <h2 class="font-bold text-xl">'undefined' :</h2>
+          <ul>
+            <li>- if any variable is not initialized</li>
+            <li>- if nothing returned from the function</li>
+            <li>- if any value of parameter not given in a function</li>
+            <li>
+              - if there is nothing written on the right side of return, it will
+              be undefined
+            </li>
+            <li>
+              - accessing a property if that is not available in the object
+            </li>
+            <li>- if an index is not present in an array</li>
+            <li>- if the value of something is set as undefined</li>
+          </ul>
+          <h2 class="font-bold text-xl mt-3">'null' :</h2>
+          <ul>
+            <li>- to indicate a falsy value</li>
+            <li>- if the value of a variable is set as null</li>
+            <li>- if the value of an object property is cleared</li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
