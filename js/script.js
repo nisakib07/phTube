@@ -99,4 +99,9 @@ const sortHandler = () => {
   displayCards(sorted);
 };
 
+const blogHandler = () => {
+  window.location.href = "blog.html";
+};
+
 loadCategories();
+tabsHandler(1000);
