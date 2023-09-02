@@ -72,7 +72,7 @@ const displayCards = (cards) => {
       </div>
     </div>
   </div>
-  <div class="w-[120px] absolute right-10 md:right-2 bottom-[40%]">
+  <div class="w-[130px] absolute right-10 md:right-2 bottom-[40%]">
   ${
     card.others.posted_date
       ? `<p
@@ -90,7 +90,7 @@ const displayCards = (cards) => {
 const compareViews = (a, b) => {
   const viewA = a.others.views.slice(0, -1);
   const viewB = b.others.views.slice(0, -1);
-  return viewA - viewB;
+  return viewB - viewA;
 };
 
 const sortHandler = () => {
