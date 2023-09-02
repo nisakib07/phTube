@@ -94,7 +94,6 @@ const compareViews = (a, b) => {
 };
 
 const sortHandler = () => {
-  console.log("ehh");
   const sorted = newArray.sort(compareViews);
   displayCards(sorted);
 };
