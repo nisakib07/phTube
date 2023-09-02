@@ -72,7 +72,7 @@ const displayCards = (cards) => {
       </div>
     </div>
   </div>
-  <div class="w-[130px] absolute right-10 md:right-2 bottom-[40%]">
+  <div class="w-[130px] absolute right-2 lg:right-10 bottom-[40%]">
   ${
     card.others.posted_date
       ? `<p
